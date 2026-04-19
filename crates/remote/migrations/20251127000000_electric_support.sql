@@ -1,6 +1,6 @@
 CREATE ROLE electric_sync WITH LOGIN REPLICATION;
 
-GRANT CONNECT ON DATABASE current_database() TO electric_sync;
+GRANT CONNECT ON DATABASE vibe_kanban TO electric_sync;
 GRANT USAGE ON SCHEMA public TO electric_sync;
 
 CREATE PUBLICATION electric_publication_default;
