@@ -12,7 +12,7 @@ permissions:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository_owner }}/vibe-kanban
+  IMAGE_NAME: unamedrus/vibe-kanban
 
 jobs:
   resolve-tags:
