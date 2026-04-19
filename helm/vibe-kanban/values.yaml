@@ -155,7 +155,7 @@ electric:
 server:
   image:
     repository: ghcr.io/unamedrus/vibe-kanban
-    tag: "remote-v0.1.27"
+    tag: "remote-v0.1.28"
     pullPolicy: Always
 
   replicaCount: 1
