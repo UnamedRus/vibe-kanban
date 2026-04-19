@@ -50,7 +50,7 @@ jobs:
       - name: Clone upstream vibe-kanban
         run: |
           git clone --branch "${{ needs.resolve-tags.outputs.server_tag }}" --depth 1 \
-            https://github.com/BloopAI/vibe-kanban.git /tmp/vibe-kanban
+            https://github.com/UnamedRus/vibe-kanban.git /tmp/vibe-kanban
 
       - name: Log in to GHCR
         uses: docker/login-action@v3
@@ -81,7 +81,7 @@ jobs:
       - name: Clone upstream vibe-kanban
         run: |
           git clone --branch "${{ needs.resolve-tags.outputs.relay_tag }}" --depth 1 \
-            https://github.com/BloopAI/vibe-kanban.git /tmp/vibe-kanban
+            https://github.com/UnamedRus/vibe-kanban.git /tmp/vibe-kanban
 
       - name: Log in to GHCR
         uses: docker/login-action@v3
