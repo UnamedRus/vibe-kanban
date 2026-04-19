@@ -15,7 +15,7 @@ env:
 
 jobs:
   resolve-tags:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
     outputs:
       server_tag: ${{ steps.tags.outputs.server_tag }}
       relay_tag: ${{ steps.tags.outputs.relay_tag }}
@@ -44,7 +44,7 @@ jobs:
 
   build-server:
     needs: resolve-tags
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
     steps:
       - name: Clone upstream vibe-kanban
         run: |
@@ -75,7 +75,7 @@ jobs:
 
   build-relay:
     needs: resolve-tags
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
     steps:
       - name: Clone upstream vibe-kanban
         run: |
@@ -104,7 +104,7 @@ jobs:
 
   build-worker:
     needs: resolve-tags
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
     steps:
       - name: Checkout
         uses: actions/checkout@v4
